@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
                     }
                     handler.postDelayed(this, 3000)
                 } else {
-                    Toast.makeText(this@MainActivity, "All features spoken", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@MainActivity, "All features shows", Toast.LENGTH_SHORT).show()
                 }
             }
         }
@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         if (status == TextToSpeech.SUCCESS) {
             val langResult = tts.setLanguage(Locale.US)
             if (langResult == TextToSpeech.LANG_MISSING_DATA || langResult == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Toast.makeText(this, "TTS language not supported", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "not supported", Toast.LENGTH_SHORT).show()
             }
         }
     }
