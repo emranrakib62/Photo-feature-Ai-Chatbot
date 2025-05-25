@@ -6,19 +6,29 @@
     android:layout_height="match_parent">
 
     <Button
+        android:backgroundTint="#8EF662"
+        style="@style/Widget.Material3.Button.ElevatedButton"
         android:id="@+id/uploadButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upload Image" />
+        android:text="Upload Image"
+        android:layout_gravity="center"
+        android:shadowColor="@color/black"
+        />
+
+
+
 
     <ImageView
         android:id="@+id/uploadedImageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginTop="16dp"
+
         android:contentDescription="Uploaded Image" />
 
     <TextView
+        android:gravity="center"
         android:id="@+id/featuresTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,9 +37,10 @@
         android:layout_marginTop="16dp" />
 
     <Button
+        android:layout_gravity="center"
         android:id="@+id/speakButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Speak Features"
+        android:text="See Features"
         android:layout_marginTop="16dp" />
 </LinearLayout>
